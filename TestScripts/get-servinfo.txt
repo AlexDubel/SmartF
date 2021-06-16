@@ -1,0 +1,15 @@
+dc01.kvcloud.local
+dc02.kvcloud.local
+radmin.kvcloud.local
+veeam-em01.kvcloud.local
+Veeam-repo01.kvcloud.local
+Veeam-repo02.kvcloud.local
+VeeamCloud01.kvcloud.local
+VeeamCloud02.kvcloud.local
+veeamcloud03.kvcloud.local
+VeeamCloud04.kvcloud.local
+veeamcloud05.kvcloud.local
+veeammssql01.kvcloud.local
+
+$serverlist=Get-Content C:\Users\oldubel\Documents\PowerShell\vCloud\TestScripts\get-servinfo.txt
+$ss=New-PSSession -Credential (Get-Credential -Message ggg -UserName oldubel@kvcloud.local) -ComputerName $serverlist
