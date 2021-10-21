@@ -1,0 +1,212 @@
+get-host
+get-vmhost
+Get-Module -ListAvailable
+ ConnectToVFCloud 
+ ConnectToVFCloud 
+ Connect-ToVFCloud -ConnectToVMwareEntity incloud.vodAFONE.UA -vCenterName VCM01.KVCLOUD.LOCAL
+get-vmhost
+get-vmhost | Get-Command
+get-vmhost | Get-member
+(get-vmhost).Manufacturer
+(get-vmhost).PowerState
+(get-vmhost).TimeZone
+(get-vmhost).MemoryTotalGB
+(get-vmhost).NetworkInfo
+(get-vmhost).NetworkInfo | ft
+(get-vmhost).NetworkInfo | ft -AutoSize
+(get-vmhost)e
+(get-vmhost)
+GET-VM
+GET-VM
+ Connect-ToVFCloud -ConnectToVMwareEntity incloud.vodAFONE.UA -vCenterName VCM01.KVCLOUD.LOCAL
+GET-VM
+GET-VM | Get-Member
+(GET-VM).vmhost
+(GET-VM).vmhost | ft -AutoSize
+(GET-VM).CoresPerSocket
+GET-VM | Get-Member
+(GET-VM).Createdate
+GET-VM | Select-Object name, Createdate
+(GET-VM).MemoryGB
+GET-VM | Select-Object name, Createdate,MemoryGB
+Get-Command -Module NSX
+Get-Command -Module *NSX*
+Get-Command -Module *NSX* -Verb get
+Get-Command -Module *NSX* -Verb get *NSX*
+Get-Command -Verb get *NSX*
+Get-Command *NSX*
+Get-NsxEdge
+Connect-ToVFCloud -ConnectToVMwareEntity incloud.vodafone.ua -vCenterName vcp01.kvcloud.local
+Get-NsxEdge
+Search-Cloud
+Search-Cloud -QueryType EdgeGateway
+(Search-Cloud -QueryType EdgeGateway).name
+$alledges = Search-Cloud -QueryType EdgeGateway
+Get-NsxEdge -Name $alledges[11111111111111111111]
+Get-NsxEdge -Name $alledges[1]
+get-help get-nsx
+get-help get-nsxedge
+get-help get-nsxedge -Examples
+get-help get-nsxedge -detailed
+Get-EdgeConfig 
+$vCenterName = "vcp01.kvcloud.local"$
+$vCenterName = "vcp01.kvcloud.local"
+$vcmcred = Get-Credential -Message "Enter Credential to connect to VC[M,P,T] server." -UserName sasha@kvcloud.local
+Connect-NsxServer -vCenterServer $vCenterName -Credential $vcmcred
+Get-NsxEdge
+Get-NsxEdge | select name, id
+Get-NsxEdge | Get-Member
+Get-NsxEdge | select name, id, tenant, vnics
+Get-NsxEdge | select name, id, tenant, vnics
+Get-NsxEdge -Name edge-213 | select name, id, tenant, vnics
+Get-NsxEdge -Name "vse-NOBILITET EDGE (d892b358-0c7a-4375-9151-27dabb435496)" | select name, id, tenant, vnics
+(Get-NsxEdge -Name "vse-NOBILITET EDGE (d892b358-0c7a-4375-91.51-27dabb435496)")vnics
+(Get-NsxEdge -Name "vse-NOBILITET EDGE (d892b358-0c7a-4375-91.51-27dabb435496)").vnics
+Get-NsxEdge -objectId edge-4 | select name, id, tenant, vnics
+Get-NsxEdge -objectId edge-4 | Get-Member
+Get-NsxIpSet -objectId edge-4
+Get-NsxIpSet -objectId edge-4
+Get-NsxIpSet -objectId "edge-4"
+Get-NsxIpSet
+(Get-NsxIpSet).VALUE
+Get-NsxEdgeInterface
+Get-NsxEdgeInterface -Edge edge-4
+($alledges).name
+($alledges[22]).name
+($alledges[32]).name
+($alledges[34]).name
+Get-NsxEdgeInterface -Edge $alledges[34]
+get-help Get-NsxEdgeInterface 
+get-help Get-NsxEdgeInterface -Examples
+Get-NsxEdge edge-04
+Get-NsxEdge edge-4
+Get-NsxEdge  -Name edge-4
+(Get-NsxEdge).name  
+Get-NsxEdge "vse-FoEdge (0af580b6-05bb-44a5-92ad-cb7843afef55)"
+Get-NsxEdge -id edge-4
+Get-NsxEdge "vse-FoEdge (0af580b6-05bb-44a5-92ad-cb7843afef55)" | Get-NsxEdgeInterface
+Get-NsxEdge "vse-FoEdge (0af580b6-05bb-44a5-92ad-cb7843afef55)" | Get-NsxEdgeInterfaceAddress
+get-help Get-NsxEdgeInterfaceAddress
+get-help Get-NsxEdgeInterfaceAddress -examples
+$allfointerfaces=Get-NsxEdge "vse-FoEdge (0af580b6-05bb-44a5-92ad-cb7843afef55)" | Get-NsxEdgeInterfaceAddress
+$allfointerfaces=Get-NsxEdge "vse-FoEdge (0af580b6-05bb-44a5-92ad-cb7843afef55)" | Get-NsxEdgeInterface
+$allfointerfaces | ForEach-Object {Get-NsxEdgeInterfaceAddress $PSItem}
+history
+$alledges = Get-NsxEdge
+$alledges | ForEach-Object { $alloneedgeinterfaces += Get-NsxEdge $PSItem | Get-NsxEdgeInterface }
+$alledges | ForEach-Object { Get-NsxEdge $PSItem | Get-NsxEdgeInterface }
+$alledges[0] | ForEach-Object { Get-NsxEdge $PSItem | Get-NsxEdgeInterface }
+$alledges
+$alledges[0]
+ Get-NsxEdge $alledges[0] | Get-NsxEdgeInterface
+ Get-NsxEdge $alledges[1] | Get-NsxEdgeInterface
+ Get-NsxEdge $alledges[10] | Get-NsxEdgeInterface
+(Get-NsxEdge $alledges[10]).name | Get-NsxEdgeInterface
+(Get-NsxEdge $alledges[10]).name 
+($alledges[10]).name 
+($alledges[10]).name | Get-NsxEdgeInterface
+$alledges[10] | Get-NsxEdgeInterface
+$alledges.name
+history
+Get-NsxEdge "vse-FoEdge (0af580b6-05bb-44a5-92ad-cb7843afef55)" | Get-NsxEdgeInterface
+Get-NsxEdge "vse-FoEdge (0af580b6-05bb-44a5-92ad-cb7843afef55)" | Get-NsxEdgeInterface | Get-Member
+Get-NsxEdge "vse-FoEdge (0af580b6-05bb-44a5-92ad-cb7843afef55)" | Get-NsxEdgeInterface -Index 0
+$alledges | ForEach-Object {Get-NsxEdgeInterface -Index 0}
+$alledges | ForEach-Object {Get-NsxEdgeInterface -Index 0 $PSItem}
+$alledges | ForEach-Object {Get-NsxEdgeInterface -Index 0 $PSItem.name}
+$alledges | ForEach-Object {Get-NsxEdgeInterface -Index 0 -Edge $PSItem.name}
+$alledges | ForEach-Object {Get-NsxEdgeInterface -Index 0 -Edge $PSItem}
+$alledges | ForEach-Object {Write-Host $PSItem -ForegroundColor Yellow Get-NsxEdgeInterface -Index 0 -Edge $PSItem}
+$alledges | ForEach-Object {Write-Host $PSItem -ForegroundColor Yellow; Get-NsxEdgeInterface -Index 0 -Edge $PSItem}
+$alledges | ForEach-Object {Write-Host $PSItem.name -ForegroundColor Yellow; Get-NsxEdgeInterface -Index 0 -Edge $PSItem}
+$alledges | ForEach-Object {Write-Host $PSItem.name -ForegroundColor Yellow; Get-NsxEdgeInterface -Index 0 -Edge $PSItem }
+$alledges.name | Measure-Object
+$alledges | ForEach-Object {Write-Host $PSItem.name -ForegroundColor Yellow; Get-NsxEdgeInterface -Index 0 -Edge $PSItem  | ForEach-Object { Get-NsxEdgeInterfaceAddress }}
+$alledges | ForEach-Object {Write-Host $PSItem.name -ForegroundColor Yellow; Get-NsxEdgeInterface -Index 0 -Edge $PSItem  | ForEach-Object { Get-NsxEdgeInterfaceAddress -Interface $PSItem}}
+$alledges | ForEach-Object {Write-Host $PSItem.name -ForegroundColor Yellow; Get-NsxEdgeInterface -Index 0 -Edge $PSItem  | ForEach-Object { (Get-NsxEdgeInterfaceAddress -Interface $PSItem).primaryaddress}}
+$alledges | ForEach-Object {Write-Host $PSItem.name -ForegroundColor Yellow; Get-NsxEdgeInterface -Edge $PSItem  | ForEach-Object { (Get-NsxEdgeInterfaceAddress -Interface $PSItem).primaryaddress}}
+$alledges | ForEach-Object {Write-Host $PSItem.name -ForegroundColor Yellow; Get-NsxEdgeInterface -Edge $PSItem  | ForEach-Object { (Get-NsxEdgeInterfaceAddress -Interface $PSItem).primaryaddress}}
+Get-NsxIpPool
+Get-NsxIPsec
+Get-NsxIPsec -Edge $alledges[0]
+Get-NsxIPsec -Edge $alledges[1]
+Get-NsxIPsec -Edge $alledges[2]
+Get-NsxIPsec -Edge $alledges[3]
+Get-NsxLoadBalancer -Edge $alledges[3]
+Get-NsxLogicalRouter -Edge $alledges[3]
+Get-NsxLogicalRouter 
+Get-NsxLogicalRouterBgp
+Get-NsxLogicalRouter | Get-NsxLogicalRouterBgp
+get-help Get-NsxLogicalRouterBgp -Examples
+Get-NsxLogicalRouter | Get-NsxLogicalRouterRouting
+Get-NsxLogicalRouter | Get-NsxLogicalRouterRouting | Get-NsxLogicalRouterBgp
+get-help Get-NsxLogicalRouterStaticRoute -Examples
+Get-NsxLogicalRouter | Get-NsxLogicalRouterRouting | Get-NsxLogicalRouterStaticRoute
+get-help Get-NsxLogicalRouterBgpNeighbour -Examples
+Get-NsxLogicalRouter | Get-NsxLogicalRouterRouting | Get-NsxLogicalRouterBgpNeighbour
+Get-NsxLogicalRouter -objectId edge-175
+Get-NsxLogicalRouter -objectId edge-175 | Get-NsxLogicalRouterRouting
+Get-NsxLogicalRouter -objectId edge-175 | Get-NsxLogicalRouterRouting | Get-NsxLogicalRouterBgpNeighbour
+Get-NsxLogicalRouter -objectId edge-175 | Get-NsxLogicalRouterRouting | Get-NsxLogicalRouterBgp
+Get-NsxLogicalRouter -objectId edge-175 | Get-NsxLogicalRouterRouting | Get-NsxLogicalRouterOspf
+Get-NsxLogicalRouter -objectId edge-175 | Get-NsxLogicalRouterRouting | Get-NsxLogicalRouterBridge
+Get-NsxLogicalRouter -objectId edge-175 | Get-NsxLogicalRouterRouting | Get-NsxLogicalRouterBridging
+Get-NsxLogicalRouter -objectId edge-175 | Get-NsxLogicalRouterRouting | Get-NsxLogicalRouterInterface
+Get-NsxLogicalRouter -objectId edge-175 | Get-NsxLogicalRouterRouting | Get-NsxLogicalRouterRedistributionRule
+Get-NsxLogicalRouter -objectId edge-175 | Get-NsxLogicalRouterRouting | Get-NsxLogicalRouterStaticRoute
+Get-NsxMacSet
+Get-NsxManagerNetwork
+Get-NsxManagerVcenterConfig
+Get-NsxSecurityGroup
+Get-NsxSecurityPolicy
+Get-NsxSegmentIdRange
+Get-NsxSecurityTag
+Get-NsxService
+Get-NsxSslVpn
+$alledges | ForEach-Object {Get-NsxSslVpn $PSItem}
+Get-NsxTransportZone
+Get-NsxBackingDVSwitch
+Get-NsxLogicalSwitch
+(Get-NsxLogicalSwitch).objectId
+(Get-NsxLogicalSwitch).objectId | Measure-Object
+Get-NsxLogicalSwitch | ForEach-Object {Get-NsxBackingDVSwitch}
+Get-NsxLogicalSwitch | ForEach-Object {Get-NsxBackingDVSwitch $PSItem}
+Connect-ToVFCloud -ConnectToVMwareEntity incloud.vodafone.ua -vCenterName vcp01.kvcloud.local
+Get-NsxLogicalSwitch | ForEach-Object {Get-NsxBackingDVSwitch $PSItem}
+Get-NsxLogicalSwitch | ForEach-Object {Get-NsxBackingDVSwitch -LogicalSwitch $PSItem}
+Get-NsxLogicalSwitch | ForEach-Object {Get-NsxBackingPortGroup -LogicalSwitch $PSItem}
+$allnsxlogicalswitches=Get-NsxLogicalSwitch 
+$allnsxlogicalswitches[0]
+$allnsxlogicalswitches[0] | Get-NsxBackingDVSwitch
+$allnsxlogicalswitches[1] | Get-NsxBackingDVSwitch
+$allnsxlogicalswitches[1] | Get-NsxBackingPortGroup
+$allnsxlogicalswitches[0] | Get-NsxBackingPortGroup
+$allnsxlogicalswitches[0] | Get-NsxBackingPortGroup | ft -AutoSize
+$allnsxlogicalswitches[1] | Get-NsxBackingPortGroup | ft -AutoSize
+$allnsxlogicalswitches[10] | Get-NsxBackingPortGroup | ft -AutoSize
+$allnsxlogicalswitches | ForEach-Object {Get-NsxBackingPortGroup $PSItem | ft -AutoSize}
+$allnsxlogicalswitches[0] | ForEach-Object {Get-NsxBackingPortGroup $PSItem | ft -AutoSize}
+$allnsxlogicalswitches | ForEach-Object {Get-NsxBackingDVSwitch $PSItem | ft -AutoSize}
+$allnsxlogicalswitches[0] | ForEach-Object {Get-NsxBackingDVSwitch $PSItem | ft -AutoSize}
+$allnsxlogicalswitches[0] | ForEach-Object {Get-NsxBackingDVSwitch  | ft -AutoSize}
+$allnsxlogicalswitches[0] | ForEach-Object {Get-NsxBackingDVSwitch -LogicalSwitch $PSItem}
+$allnsxlogicalswitches[0] | ForEach-Object {Get-NsxBackingDVSwitch -LogicalSwitch $allnsxlogicalswitches[0]}
+Get-NsxBackingDVSwitch -LogicalSwitch $allnsxlogicalswitches[0]
+Get-NsxBackingDVSwitch -LogicalSwitch $allnsxlogicalswitches
+Get-NsxBackingDVSwitch -LogicalSwitch $allnsxlogicalswitches[0].name
+Get-NsxBackingDVSwitch -LogicalSwitch $allnsxlogicalswitches[0].LocalName
+Get-NsxBackingDVSwitch -LogicalSwitch $allnsxlogicalswitches[0].isUniversal
+$allnsxlogicalswitches[0]
+Get-NsxBackingDVSwitch -LogicalSwitch $allnsxlogicalswitches[0].objectId
+Get-NsxBackingDVSwitch -LogicalSwitch (Get-NsxLogicalSwitch)
+Get-NsxLogicalSwitch | Get-NsxBackingDVSwitch -LogicalSwitch $PSItem
+Get-NsxLogicalSwitch | ForEach-Object {Get-NsxBackingDVSwitch -LogicalSwitch $PSItem}
+Get-command *LogicalSwitch*
+ Get-NsxBackingDVSwitch 
+ Get-NsxBackingDVSwitch 
+history
+history | Out-File "C:\Users\oldubel\Documents\PowerShell\vCloud\history-09-Aug-2021.txt"
+(Get-History | Format-List).CommandLine
+(Get-History).CommandLine | Format-List
+(Get-History | Format-List).CommandLine | Out-File "C:\Users\oldubel\Documents\PowerShell\vCloud\history-09-Aug-2021.txt"
+(Get-History | Format-List).CommandLine | Out-File "C:\Users\oldubel\Documents\PowerShell\vCloud\history-09-Aug-2021.txt"

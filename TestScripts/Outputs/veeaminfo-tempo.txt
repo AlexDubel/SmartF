@@ -1,0 +1,134 @@
+
+WindowsProductName          : Windows Server 2016 Datacenter
+BiosFirmwareType            : Bios
+BiosSeralNumber             : VMware-42 12 06 98 3a 33 1c 4e-74 76 00 05 8b 17 aa 49
+CsModel                     : VMware Virtual Platform
+CsDomainRole                : BackupDomainController
+CsNumberOfLogicalProcessors : 2
+CsNumberOfProcessors        : 1
+TotalMemoryGB               : 4
+PSComputerName              : dc02.kvcloud.local
+RunspaceId                  : f3595dfe-7e4a-42a4-a019-fcc60ee66bf8
+
+WindowsProductName          : Windows Server 2016 Datacenter
+BiosFirmwareType            : Bios
+BiosSeralNumber             : VMware-56 4d dd 62 d9 62 0d f8-30 49 ea be 5f b5 0d 55
+CsModel                     : VMware Virtual Platform
+CsDomainRole                : PrimaryDomainController
+CsNumberOfLogicalProcessors : 2
+CsNumberOfProcessors        : 1
+TotalMemoryGB               : 4
+PSComputerName              : dc01.kvcloud.local
+RunspaceId                  : acf7b486-b50f-4d00-88f1-1dae3565c7eb
+
+WindowsProductName          : Windows Server 2016 Standard
+BiosFirmwareType            : Bios
+BiosSeralNumber             : VMware-42 2e 58 a5 9e 88 a3 a9-e4 e3 6c 8b c9 76 90 88
+CsModel                     : VMware Virtual Platform
+CsDomainRole                : MemberServer
+CsNumberOfLogicalProcessors : 2
+CsNumberOfProcessors        : 2
+TotalMemoryGB               : 4
+PSComputerName              : veeam-em01.kvcloud.local
+RunspaceId                  : 833fb014-fdcf-4577-a51c-b5f2e9c5eda7
+
+WindowsProductName          : Windows Server 2016 Standard
+BiosFirmwareType            : Bios
+BiosSeralNumber             : VMware-42 2e 44 98 4e af 35 30-c1 83 67 6b e6 0b 0b 67
+CsModel                     : VMware Virtual Platform
+CsDomainRole                : MemberServer
+CsNumberOfLogicalProcessors : 2
+CsNumberOfProcessors        : 2
+TotalMemoryGB               : 4
+PSComputerName              : VeeamCloud05.kvcloud.local
+RunspaceId                  : 8a4d71cc-7be7-4ac9-ae42-c0094c63fac4
+
+WindowsProductName          : Windows Server 2016 Standard
+BiosFirmwareType            : Bios
+BiosSeralNumber             : VMware-42 2e c5 40 f5 f5 a3 6a-0b b1 00 04 cd 14 e9 80
+CsModel                     : VMware Virtual Platform
+CsDomainRole                : MemberServer
+CsNumberOfLogicalProcessors : 4
+CsNumberOfProcessors        : 4
+TotalMemoryGB               : 16
+PSComputerName              : radmin.kvcloud.local
+RunspaceId                  : 152f648f-9988-42e4-832c-e18b18c89ef2
+
+WindowsProductName          : Windows Server 2016 Standard
+BiosFirmwareType            : Uefi
+BiosSeralNumber             : VMware-42 2e 6e d6 c3 20 b1 40-55 8b bf ed 67 58 a4 c6
+CsModel                     : VMware7,1
+CsDomainRole                : MemberServer
+CsNumberOfLogicalProcessors : 4
+CsNumberOfProcessors        : 4
+TotalMemoryGB               : 16
+PSComputerName              : VeeamCloud03.kvcloud.local
+RunspaceId                  : 21718e1b-cffe-4532-90b2-64387049f47f
+
+WindowsProductName          : Windows Server 2016 Standard
+BiosFirmwareType            : Uefi
+BiosSeralNumber             : 210305756810J4000987
+CsModel                     : CH121 V3
+CsDomainRole                : MemberServer
+CsNumberOfLogicalProcessors : 56
+CsNumberOfProcessors        : 2
+TotalMemoryGB               : 384
+PSComputerName              : veeam-repo02.kvcloud.local
+RunspaceId                  : e3c0af8d-12a5-4cc3-a429-92032fab0f63
+
+WindowsProductName          : Windows Server 2016 Standard
+BiosFirmwareType            : Bios
+BiosSeralNumber             : VMware-42 2e 25 3d 0f 79 a9 51-65 e7 f6 d2 d6 81 69 32
+CsModel                     : VMware Virtual Platform
+CsDomainRole                : MemberServer
+CsNumberOfLogicalProcessors : 4
+CsNumberOfProcessors        : 4
+TotalMemoryGB               : 8
+PSComputerName              : veeammssql01.kvcloud.local
+RunspaceId                  : 38c4b2a0-ef79-4fb0-9404-a7e0694d13fd
+
+WindowsProductName          : Windows Server 2016 Standard
+BiosFirmwareType            : Uefi
+BiosSeralNumber             : VMware-42 2e 63 16 ed 21 51 b2-16 8c ab ee 00 68 85 b8
+CsModel                     : VMware7,1
+CsDomainRole                : MemberServer
+CsNumberOfLogicalProcessors : 4
+CsNumberOfProcessors        : 4
+TotalMemoryGB               : 16
+PSComputerName              : VeeamCloud02.kvcloud.local
+RunspaceId                  : b414b1b6-2332-41dc-8f41-49a197b76ca1
+
+WindowsProductName          : Windows Server 2016 Standard
+BiosFirmwareType            : Uefi
+BiosSeralNumber             : 210305756810J4000988
+CsModel                     : CH121 V3
+CsDomainRole                : MemberServer
+CsNumberOfLogicalProcessors : 56
+CsNumberOfProcessors        : 2
+TotalMemoryGB               : 384
+PSComputerName              : veeam-repo01.kvcloud.local
+RunspaceId                  : 0c97e14f-7b12-4700-aa27-687a720f3d6f
+
+WindowsProductName          : Windows Server 2016 Standard
+BiosFirmwareType            : Bios
+BiosSeralNumber             : VMware-42 2e 97 c7 4e 76 40 21-62 b9 cd 5d 9b 7b b2 8d
+CsModel                     : VMware Virtual Platform
+CsDomainRole                : MemberServer
+CsNumberOfLogicalProcessors : 2
+CsNumberOfProcessors        : 2
+TotalMemoryGB               : 4
+PSComputerName              : VeeamCloud04.kvcloud.local
+RunspaceId                  : ba7c3623-f1f8-4f32-a4ef-0aba4d898c37
+
+WindowsProductName          : Windows Server 2016 Standard
+BiosFirmwareType            : Uefi
+BiosSeralNumber             : VMware-42 2e 29 f8 ef e0 0a d6-c8 1f 2d 47 9d 11 00 a2
+CsModel                     : VMware7,1
+CsDomainRole                : MemberServer
+CsNumberOfLogicalProcessors : 4
+CsNumberOfProcessors        : 4
+TotalMemoryGB               : 8
+PSComputerName              : VeeamCloud01.kvcloud.local
+RunspaceId                  : ccf184d3-34b9-4da8-89fa-d41c6a7a157b
+
+

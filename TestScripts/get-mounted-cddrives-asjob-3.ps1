@@ -35,7 +35,8 @@
              Add-Member -inputObject $infoObject -memberType NoteProperty -name "ConnectionState"   -value $kk.ConnectionState
              Add-Member -inputObject $infoObject -memberType NoteProperty -name "ISOPath"           -value $kk.IsoPath
              Add-Member -inputObject $infoObject -memberType NoteProperty -name "Name"              -value $PSItem.Name
-             Add-Member -inputObject $infoObject -memberType NoteProperty -name "Org"               -value $PSItem.Org
+             Add-Member -inputObject $infoObject -memberType NoteProperty -name "Org"       
+                     -value $PSItem.Org
              Add-Member -inputObject $infoObject -memberType NoteProperty -name "OrgVDC"            -value $PSItem.OrgVdc
              Add-Member -inputObject $infoObject -memberType NoteProperty -name "Status"            -value $PSItem.Status
                          

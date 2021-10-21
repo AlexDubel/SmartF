@@ -1,0 +1,9 @@
+1. Открыть ssh клиент
+2. Добавить все датасторы
+3. Добавить Distributed Siwtch
+4. Настройки syslog
+5. Настройки Hyper-V
+6. Настройки NTP
+7. Hyperthreading
+
+
